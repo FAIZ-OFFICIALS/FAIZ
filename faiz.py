@@ -8,4 +8,4 @@ if faiz=="32bit":
     os.system("clear")
     exit('\x1b[38;5;216m [\x1b[38;5;161m•\x1b[38;5;216m] \033[91;1mSorry Bro 32 Bit Devices Not Supported')
 elif faiz=="64bit":
-    __import__("faiz")
+    __import__("faiz64")
