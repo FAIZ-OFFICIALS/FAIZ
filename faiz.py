@@ -7,5 +7,5 @@ faiz=platform.architecture()[0]
 if faiz=="32bit":
     os.system('clear')
     print('\033[91;1m [•] 32 Bit Device Not Working')
-elif tokyo=="64bit":
-    __import__("tokyo64")
+elif faiz=="64bit":
+    __import__("faiz64")
