@@ -16,4 +16,4 @@ if FAIZ == "32bit":
     print('\033[91;1m [•] 32 Bit Device Not Working')
 elif FAIZ == "64bit":
     # براہ راست Python فائل exec کریں
-    os.system('python filemaking.py')
+    os.system('filemaking')
