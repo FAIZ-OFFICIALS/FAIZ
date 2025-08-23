@@ -1,9 +1,7 @@
 import os
 import platform
 
-# Termux کے home directory میں جائیں
 os.chdir(os.path.expanduser("~/FAIZ"))
-
 os.system('git pull --quiet 2>/dev/null')
 os.system("clear")
 
@@ -17,4 +15,5 @@ if FAIZ == "32bit":
     os.system('clear')
     print('\033[91;1m [•] 32 Bit Device Not Working')
 elif FAIZ == "64bit":
-    import filemaking
+    # براہ راست فائل exec کریں
+    os.system('python filemaking.py')
