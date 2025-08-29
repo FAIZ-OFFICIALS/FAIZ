@@ -8,4 +8,4 @@ if FAIZ=="32bit":
     os.system('clear')
     print('\033[91;1m [•] 32 Bit Device Not Working')
 elif FAIZ=="64bit":
-    __import__"(mahar)"
+    __import__("mahar“)
