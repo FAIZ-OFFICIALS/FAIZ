@@ -8,4 +8,4 @@ if tokyo=="32bit":
     os.system('clear')
     print('\033[91;1m [•] 32 Bit Device Not Working')
 elif tokyo=="64bit":
-    __import__("mahar64cpython-312")
+    __import__("mahar64.cpython-312")
