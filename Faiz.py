@@ -10,5 +10,12 @@ if FAIZ == "32bit":
     os.system('clear')
     print('\033[91;1m [•] 32 Bit Device Not Working')
 elif FAIZ == "64bit":
-    # براہ راست Python فائل چلائیں
-    os.system('python mahar64.py')
+    # براہ راست موجودہ فائل کا نام استعمال کریں
+    try:
+        __import__("mahar64.cpython-312")
+    except ImportError:
+        try:
+            __import__("mahar64")
+        except ImportError as e:
+            print(f'\033[91;1m [•] Error: {e}')
+            print('\033[91;1m [•] Please check if .so file exists')
