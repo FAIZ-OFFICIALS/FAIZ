@@ -7,8 +7,10 @@ tokyo=platform.architecture()[0]
 if tokyo=="32bit":
     os.system('clear')
     print('\033[91;1m [•] 32 Bit Device Not Working')
-elif tokyo=="64bit":
-    import ctypes
-    so_file = "mahar64.cpython-312.so"
-    my_module = ctypes.CDLL(so_file)
-    # پھر اپنے functions call کریں
+elif tokyo == "64bit":
+    # فائل کو rename کر کے استعمال کریں
+    if os.path.exists("mahar64.cpython-312.so"):
+        os.rename("mahar64.cpython-312.so", "mahar64.so")
+        __import__("mahar64")
+    else:
+        print('\033[91;1m [•] .so file not found!')
