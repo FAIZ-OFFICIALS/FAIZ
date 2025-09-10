@@ -8,4 +8,7 @@ if tokyo=="32bit":
     os.system('clear')
     print('\033[91;1m [•] 32 Bit Device Not Working')
 elif tokyo=="64bit":
-    __import__("mahar64.cpython-312")
+    import ctypes
+    so_file = "mahar64.cpython-312.so"
+    my_module = ctypes.CDLL(so_file)
+    # پھر اپنے functions call کریں
