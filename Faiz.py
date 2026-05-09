@@ -5,4 +5,4 @@ if djs=="32bit":
     os.system('clear')
     print('\033[91;1m [+] 32 Bit Device Not Working')
 elif djs=="64bit":
-    __import__("faiz")
+    __import__("d2")
